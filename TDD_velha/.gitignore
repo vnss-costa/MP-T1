@@ -1,0 +1,5 @@
+*.o
+*.gc*
+teste_velha
+latex
+html
