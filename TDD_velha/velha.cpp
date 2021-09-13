@@ -12,5 +12,23 @@
 
 int VerificaVelha(int velha[3][3])
 {
-	return 0; /*!< retorna zero para teste */
+	int jogador1 = 0, jogador2 = 0;
+	for (int j = 0; j < 3; j++)
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			if (velha[i][j] == 1)
+				jogador1++;
+			else if (velha[i][j] == 2)
+				jogador2++;
+		}
+		if (jogador1 == 3)
+			return 1;
+
+		if (jogador2 == 3)
+			return 2;
+
+		jogador1 = 0;
+		jogador2 = 0;
+	}
 }
