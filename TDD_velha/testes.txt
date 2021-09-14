@@ -1,0 +1,9 @@
+Os testes foram divididos em 5 casos, sendo eles: vitória em coluna, vitória em linha, vitória em diagonal, jogos impossíveis, empates e jogos indefinidos.
+
+Nos testes de vitória estão todos as possibilidades de vitória tanto do X quanto do O. No total soma se 16 possibilidades, testando cada linha, coluna e diagonal.
+
+Os testes de empate são compostos por 4 possibilidades de empate, onde todas as casas disponiveis estão preenchidadas por 1s ou 2s.
+
+Os testes de Jogos indefinidos são aqueles que ainda possuem alguma posição da matriz que contenha um 0.
+
+Os testes impossíveis incluem: os dois jogadores terem sido vitoriosos em linhas ou colunas, a velha ser composta apenas por 1s e 0s ou 2s e 0s, ou por numeros de não sejam 0, 1 ou 2.
