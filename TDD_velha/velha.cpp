@@ -12,7 +12,8 @@
 
 int VerificaVelha(int velha[3][3])
 {
-    int jogador1 = 0, jogador2 = 0;
+    int jogador1 = 0, jogador2 = 0, empates = 0;
+    //verifica ganhador em colunas
     for (int j = 0; j < 3; j++)
     {
         for (int i = 0; i < 3; i++)
@@ -31,7 +32,7 @@ int VerificaVelha(int velha[3][3])
         jogador1 = 0;
         jogador2 = 0;
     }
-
+    //verifica ganhador em linhas
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -83,4 +84,16 @@ int VerificaVelha(int velha[3][3])
 
     jogador1 = 0;
     jogador2 = 0;
+
+    //verifica indefinidos
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (velha[i][j] == 0)
+                empates++; //guarda se algum 0 foi encontrado
+        }
+    }
+    if (empates == 0)
+        return 0; // se não foi encontrado nenhum 0, retorna empate
 }
